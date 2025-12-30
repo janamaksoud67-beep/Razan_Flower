@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Razan Flower Shop - Premium Flowers in Tripoli</title>
+    <title>Razan Flower Shop - Premium Flowers in Tripoli, Lebanon</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
     <style>
@@ -364,8 +364,8 @@
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('https://img.freepik.com/free-photo/flowers-floral-shop-different-types_1303-15615.jpg?semt=ais_hybrid&w=740&q=80') no-repeat center/cover;
-            padding: 150px 60px;
+                        url('https://media.istockphoto.com/id/1406482571/photo/flowers-at-a-florist-austria.jpg?s=612x612&w=0&k=20&c=TcAmD0DmVHYpKz83SGTEpMvjVXSHbtATdRp30znQ860=') no-repeat center/cover;
+            padding: 80px 20px;
             text-align: center;
             border-radius: var(--radius);
             margin: 15px;
@@ -1426,6 +1426,265 @@
             100% { transform: rotate(360deg); }
         }
         
+        /* New Elements */
+        
+        /* Location Badge */
+        .location-badge {
+            position: fixed;
+            top: 90px;
+            left: 15px;
+            background: white;
+            padding: 10px 15px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            z-index: 800;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--dark);
+            transition: var(--transition);
+            max-width: 300px;
+        }
+        
+        .location-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .location-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #4285F4 0%, #34A853 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+        }
+        
+        .location-info {
+            flex: 1;
+        }
+        
+        .location-info h4 {
+            font-size: 14px;
+            color: var(--primary);
+            margin-bottom: 3px;
+        }
+        
+        .location-info p {
+            font-size: 12px;
+            color: var(--gray);
+        }
+        
+        /* Category Tabs */
+        .category-tabs {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            margin: 20px 15px;
+            padding-bottom: 10px;
+            scrollbar-width: thin;
+        }
+        
+        .category-tabs::-webkit-scrollbar {
+            height: 4px;
+        }
+        
+        .category-tabs::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 4px;
+        }
+        
+        .category-tab {
+            background: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            white-space: nowrap;
+            transition: var(--transition);
+            border: 2px solid transparent;
+            box-shadow: var(--shadow);
+        }
+        
+        .category-tab:hover,
+        .category-tab.active {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            border-color: transparent;
+            transform: translateY(-3px);
+        }
+        
+        /* Google Maps Section */
+        .maps-section {
+            padding: 30px 15px;
+            background: var(--light);
+            margin: 30px 15px;
+            border-radius: var(--radius);
+        }
+        
+        .maps-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        
+        @media (min-width: 768px) {
+            .maps-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .map-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .map-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .map-image {
+            height: 200px;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .map-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .map-info {
+            padding: 20px;
+        }
+        
+        .map-info h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        /* Contact Form */
+        .contact-form-section {
+            padding: 30px 15px;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        @media (min-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        /* Testimonials */
+        .testimonials-section {
+            padding: 40px 15px;
+            background: linear-gradient(135deg, rgba(232,62,140,0.05) 0%, rgba(32,201,151,0.05) 100%);
+            margin: 30px 15px;
+            border-radius: var(--radius);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 25px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .testimonial-rating {
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-text {
+            color: var(--gray);
+            font-style: italic;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .testimonial-author img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        /* Statistics */
+        .stats-section {
+            padding: 40px 15px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            margin: 30px 15px;
+            border-radius: var(--radius);
+            color: white;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+        
+        .stat-item {
+            padding: 20px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
         /* Responsive */
         @media (min-width: 768px) {
             .desktop-header {
@@ -1489,6 +1748,11 @@
             .footer-section {
                 flex: 1;
             }
+            
+            .location-badge {
+                left: 30px;
+                top: 120px;
+            }
         }
         
         @media (min-width: 1024px) {
@@ -1526,8 +1790,11 @@
                 <a href="#" class="desktop-nav-link" onclick="showSection('products')">
                     <i class="fas fa-store"></i> All Products
                 </a>
-                <a href="#" class="desktop-nav-link" onclick="showSection('featured')">
-                    <i class="fas fa-star"></i> Featured
+                <a href="#" class="desktop-nav-link" onclick="showSection('categories')">
+                    <i class="fas fa-th-large"></i> Categories
+                </a>
+                <a href="#" class="desktop-nav-link" onclick="showSection('contact')">
+                    <i class="fas fa-envelope"></i> Contact
                 </a>
                 <a href="#" class="desktop-nav-link" onclick="showSection('about')">
                     <i class="fas fa-info-circle"></i> About
@@ -1581,8 +1848,13 @@
                 </a>
             </li>
             <li class="menu-item">
-                <a href="#" class="menu-link" onclick="showSection('featured')">
-                    <i class="fas fa-star"></i> Featured
+                <a href="#" class="menu-link" onclick="showSection('categories')">
+                    <i class="fas fa-th-large"></i> Categories
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link" onclick="showSection('contact')">
+                    <i class="fas fa-envelope"></i> Contact
                 </a>
             </li>
             <li class="menu-item">
@@ -1604,6 +1876,18 @@
         </ul>
     </nav>
     
+    <!-- Location Badge -->
+    <a href="https://www.google.com/maps?q=Tripoli+Al+Kobbeh+Lebanon" class="location-badge" target="_blank">
+        <div class="location-icon">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="location-info">
+            <h4>Our Location</h4>
+            <p>Tripoli, Al Kobbeh - Open Maps</p>
+        </div>
+        <i class="fas fa-external-link-alt" style="color: var(--primary);"></i>
+    </a>
+    
     <!-- Main Content -->
     <main class="main-content">
         <!-- Home Section -->
@@ -1613,16 +1897,43 @@
                     <h2>Razan Flower Shop</h2>
                     <div class="hero-location">
                         <i class="fas fa-map-marker-alt"></i>
-                        Tripoli, Lebanon
+                        Tripoli, Al Kobbeh, Lebanon
                     </div>
                     <p>Beautiful flowers for every occasion. Fresh, premium arrangements delivered with love.</p>
                     <div class="hero-buttons">
-                        <button class="btn btn-primary" onclick="showSection('products')">
+                        <button class="btn btn-primary" onclick="showSection('categories')">
                             <i class="fas fa-shopping-bag"></i> Shop Now
                         </button>
-                        <button class="btn btn-secondary" onclick="showSection('about')">
+                        <button class="btn btn-secondary" onclick="showSection('contact')">
                             <i class="fas fa-phone"></i> Contact Us
                         </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Statistics Section -->
+            <div class="stats-section">
+                <div class="section-title" style="text-align: center;">
+                    <h2 style="color: white;"><i class="fas fa-chart-line"></i> Our Impact</h2>
+                    <p style="color: rgba(255,255,255,0.8);">Delivering happiness across Tripoli</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1200+</div>
+                        <div class="stat-label">Bouquets Delivered</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Wedding Events</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support Available</div>
                     </div>
                 </div>
             </div>
@@ -1635,6 +1946,45 @@
             
             <div id="featured-preview" class="products-grid">
                 <!-- Featured products will load here -->
+            </div>
+            
+            <!-- Google Maps Section -->
+            <div class="maps-section">
+                <div class="section-title">
+                    <h2><i class="fas fa-map-marked-alt"></i> Find Our Store</h2>
+                    <p>Visit us at our location in Tripoli, Al Kobbeh</p>
+                </div>
+                
+                <div class="maps-container">
+                    <div class="map-card">
+                        <div class="map-image">
+                            <img src="https://maps.googleapis.com/maps/api/staticmap?center=Tripoli,Al+Kobbeh,Lebanon&zoom=15&size=600x300&scale=2&markers=color:red%7CTripoli,Al+Kobbeh,Lebanon&key=AIzaSyC5DYfR5gJzWbF7gZ0eHwU4KtqT7V8N9X0" alt="Map Location">
+                        </div>
+                        <div class="map-info">
+                            <h3>Our Store Location</h3>
+                            <p><i class="fas fa-map-marker-alt" style="color: var(--primary);"></i> Tripoli, Al Kobbeh, Lebanon</p>
+                            <p><i class="fas fa-clock" style="color: var(--primary);"></i> Open 8:00 AM - 10:00 PM</p>
+                            <a href="https://www.google.com/maps?q=Tripoli+Al+Kobbeh+Lebanon" class="btn btn-primary" target="_blank" style="margin-top: 15px; width: 100%;">
+                                <i class="fas fa-directions"></i> Open in Google Maps
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="map-card">
+                        <div class="map-image">
+                            <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=600&h=300&fit=crop" alt="Store Interior">
+                        </div>
+                        <div class="map-info">
+                            <h3>Store Information</h3>
+                            <p><i class="fas fa-store" style="color: var(--primary);"></i> Razan Flower Shop</p>
+                            <p><i class="fas fa-phone" style="color: var(--primary);"></i> +961 81221970</p>
+                            <p><i class="fab fa-whatsapp" style="color: #25D366;"></i> +961 81221970</p>
+                            <a href="tel:+96181221970" class="btn btn-secondary" style="margin-top: 15px; width: 100%;">
+                                <i class="fas fa-phone"></i> Call Us Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <!-- Features Grid -->
@@ -1671,6 +2021,70 @@
                     <p style="color: var(--gray); font-size: 14px;">Always here to help</p>
                 </div>
             </div>
+            
+            <!-- Testimonials -->
+            <div class="testimonials-section">
+                <div class="section-title">
+                    <h2><i class="fas fa-heart"></i> Customer Love</h2>
+                    <p>What our customers say about us</p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The most beautiful roses for my wedding anniversary! Razan Flower made our day special with their stunning arrangements."</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah M.">
+                            <div>
+                                <strong>Sarah M.</strong>
+                                <p style="color: var(--gray); font-size: 14px;">Tripoli</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"Perfect wedding flowers! They understood exactly what we wanted and delivered beyond our expectations."</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Ali H.">
+                            <div>
+                                <strong>Ali H.</strong>
+                                <p style="color: var(--gray); font-size: 14px;">Beirut</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Same-day delivery saved my event! The flowers were fresh and beautifully arranged. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="Layla K.">
+                            <div>
+                                <strong>Layla K.</strong>
+                                <p style="color: var(--gray); font-size: 14px;">Tripoli</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
         <!-- All Products Section -->
@@ -1685,15 +2099,121 @@
             </div>
         </section>
         
-        <!-- Featured Products Section -->
-        <section id="featured-section" class="section" style="display: none;">
+        <!-- Categories Section -->
+        <section id="categories-section" class="section" style="display: none;">
             <div class="page-title">
-                <h2><i class="fas fa-star"></i> Featured Products</h2>
-                <p>Our most popular and premium flower arrangements</p>
+                <h2><i class="fas fa-th-large"></i> Categories</h2>
+                <p>Browse flowers by category</p>
             </div>
             
-            <div id="featured-products" class="products-grid">
-                <!-- Featured products will load here -->
+            <div class="category-tabs" id="categoryTabs">
+                <!-- Category tabs will be generated here -->
+            </div>
+            
+            <div id="category-products" class="products-grid">
+                <!-- Category products will load here -->
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact-section" class="section" style="display: none;">
+            <div class="page-title">
+                <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+                <p>Get in touch with us for any inquiries</p>
+            </div>
+            
+            <div class="contact-form-section">
+                <div class="contact-form">
+                    <h3 style="color: var(--primary); margin-bottom: 20px; text-align: center;">Send Us a Message</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName"><i class="fas fa-user"></i> Full Name</label>
+                            <input type="text" id="contactName" class="form-control" placeholder="Enter your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail"><i class="fas fa-envelope"></i> Email Address</label>
+                            <input type="email" id="contactEmail" class="form-control" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactPhone"><i class="fas fa-phone"></i> Phone Number</label>
+                        <input type="tel" id="contactPhone" class="form-control" placeholder="Enter your phone number">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactMessage"><i class="fas fa-comment"></i> Your Message</label>
+                        <textarea id="contactMessage" rows="5" class="form-control" placeholder="Type your message here..."></textarea>
+                    </div>
+                    
+                    <button onclick="sendContactMessage()" class="btn btn-primary" style="width: 100%;">
+                        <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                    </button>
+                    
+                    <div style="margin-top: 20px; text-align: center;">
+                        <p style="color: var(--gray); font-size: 14px;">Or contact us directly:</p>
+                        <div style="display: flex; gap: 15px; justify-content: center; margin-top: 15px;">
+                            <a href="tel:+96181221970" class="btn" style="background: var(--primary); color: white;">
+                                <i class="fas fa-phone"></i> Call
+                            </a>
+                            <a href="https://wa.me/96181221970" class="btn" style="background: #25D366; color: white;">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="mailto:razokim70@gmail.com" class="btn" style="background: var(--accent); color: var(--dark);">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Info Cards -->
+            <div class="features-grid" style="margin-top: 30px;">
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p style="color: var(--gray); font-size: 14px;">+961 81221970</p>
+                    <a href="https://wa.me/96181221970" class="btn" style="margin-top: 10px; padding: 8px 20px; background: #25D366; color: white; font-size: 14px;">
+                        Message Now
+                    </a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone Call</h3>
+                    <p style="color: var(--gray); font-size: 14px;">+961 81221970</p>
+                    <a href="tel:+96181221970" class="btn" style="margin-top: 10px; padding: 8px 20px; background: var(--primary); color: white; font-size: 14px;">
+                        Call Now
+                    </a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, var(--accent) 0%, #ff9800 100%);">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p style="color: var(--gray); font-size: 14px;">razokim70@gmail.com</p>
+                    <a href="mailto:razokim70@gmail.com" class="btn" style="margin-top: 10px; padding: 8px 20px; background: var(--accent); color: var(--dark); font-size: 14px;">
+                        Send Email
+                    </a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p style="color: var(--gray); font-size: 14px;">Tripoli, Al Kobbeh, Lebanon</p>
+                    <a href="https://www.google.com/maps?q=Tripoli+Al+Kobbeh+Lebanon" class="btn" style="margin-top: 10px; padding: 8px 20px; background: #6c5ce7; color: white; font-size: 14px;">
+                        View on Map
+                    </a>
+                </div>
             </div>
         </section>
         
@@ -1708,7 +2228,7 @@
                 <div class="about-card animate">
                     <h3><i class="fas fa-heart"></i> Our Story</h3>
                     <div class="about-image">
-                        <img src="https://rebeccaplotnick.com/cdn/shop/products/MG_7467_small.jpg?v=1582032689" alt="Flower Shop">
+                        <img src="https://theflowershoptorrevieja.com/wp-content/uploads/2024/04/elisabet-recommendation-the-flower-shop-torrevieja-may-2024-2.jpg" alt="Flower Shop">
                     </div>
                     <p>Razan Flower Shop was founded with a simple mission: to bring beautiful, fresh flowers to people's lives in Tripoli. What started as a small local flower shop has grown into a premium flower destination known for quality and creativity.</p>
                     <p>Our team of expert florists combines traditional craftsmanship with modern design to create stunning arrangements that bring joy to every occasion. We work directly with growers to ensure the freshest flowers and support sustainable practices.</p>
@@ -1757,7 +2277,7 @@
                             </div>
                             <div>
                                 <strong>Location</strong>
-                                <p>Tripoli, Lebanon</p>
+                                <p>Tripoli, Al Kobbeh, Lebanon</p>
                             </div>
                         </div>
                     </div>
@@ -1803,8 +2323,8 @@
                 <h3><i class="fas fa-link"></i> Quick Links</h3>
                 <ul class="footer-links">
                     <li><a href="#" onclick="showSection('home')"><i class="fas fa-chevron-right"></i> Home</a></li>
-                    <li><a href="#" onclick="showSection('products')"><i class="fas fa-chevron-right"></i> All Products</a></li>
-                    <li><a href="#" onclick="showSection('featured')"><i class="fas fa-chevron-right"></i> Featured</a></li>
+                    <li><a href="#" onclick="showSection('categories')"><i class="fas fa-chevron-right"></i> Categories</a></li>
+                    <li><a href="#" onclick="showSection('contact')"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
                     <li><a href="#" onclick="showSection('about')"><i class="fas fa-chevron-right"></i> About Us</a></li>
                 </ul>
             </div>
@@ -1815,7 +2335,7 @@
                     <li><a href="tel:+96181221970"><i class="fas fa-phone"></i> +961 81221970</a></li>
                     <li><a href="https://wa.me/96181221970"><i class="fab fa-whatsapp"></i> +961 81221970</a></li>
                     <li><a href="mailto:razokim70@gmail.com"><i class="fas fa-envelope"></i> razokim70@gmail.com</a></li>
-                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Tripoli, Lebanon</a></li>
+                    <li><a href="https://www.google.com/maps?q=Tripoli+Al+Kobbeh+Lebanon"><i class="fas fa-map-marker-alt"></i> Tripoli, Al Kobbeh, Lebanon</a></li>
                 </ul>
             </div>
             
@@ -1848,13 +2368,13 @@
             <i class="fas fa-home"></i>
             <span>Home</span>
         </a>
-        <a href="#" class="nav-item" onclick="showSection('products')">
-            <i class="fas fa-store"></i>
-            <span>Products</span>
+        <a href="#" class="nav-item" onclick="showSection('categories')">
+            <i class="fas fa-th-large"></i>
+            <span>Categories</span>
         </a>
-        <a href="#" class="nav-item" onclick="showSection('featured')">
-            <i class="fas fa-star"></i>
-            <span>Featured</span>
+        <a href="#" class="nav-item" onclick="showSection('contact')">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
         </a>
         <a href="#" class="nav-item" onclick="showCartModal()">
             <i class="fas fa-shopping-basket"></i>
@@ -1959,9 +2479,10 @@
                         <select id="adminProductCategory" class="form-control">
                             <option value="Roses">Roses</option>
                             <option value="Bouquets">Bouquets</option>
-                            <option value="Flower Arrangements">Flower Arrangements</option>
-                            <option value="Plants">Plants</option>
                             <option value="Wedding Flowers">Wedding Flowers</option>
+                            <option value="Single Flowers">Single Flowers</option>
+                            <option value="Event Arrangements">Event Arrangements</option>
+                            <option value="Gift Sets">Gift Sets</option>
                         </select>
                     </div>
                     
@@ -1999,8 +2520,8 @@
     let products = JSON.parse(localStorage.getItem('razanFlowerProducts')) || [
         {
             id: 1,
-            name: "Premium Red Roses",
-            price: 25.99,
+            name: "Premium Red Roses Bouquet",
+            price: 35.99,
             image: "https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?w=400&h=400&fit=crop",
             category: "Roses",
             description: "Beautiful bouquet of 12 premium red roses",
@@ -2009,8 +2530,28 @@
         },
         {
             id: 2,
+            name: "Wedding Flower Package",
+            price: 299.99,
+            image: "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=400&fit=crop",
+            category: "Wedding Flowers",
+            description: "Complete wedding flower package including bridal bouquet",
+            featured: true,
+            new: false
+        },
+        {
+            id: 3,
+            name: "Single Red Rose",
+            price: 8.50,
+            image: "https://images.unsplash.com/photo-1559561736-9e8d8c33e4b9?w=400&h=400&fit=crop",
+            category: "Single Flowers",
+            description: "Premium quality single red rose with greenery",
+            featured: false,
+            new: true
+        },
+        {
+            id: 4,
             name: "Mixed Flower Bouquet",
-            price: 35.50,
+            price: 45.75,
             image: "https://images.unsplash.com/photo-1512237269477-c9e5a8e34480?w=400&h=400&fit=crop",
             category: "Bouquets",
             description: "Colorful mix of seasonal flowers",
@@ -2018,65 +2559,56 @@
             new: false
         },
         {
-            id: 3,
-            name: "White Lily Arrangement",
-            price: 45.75,
-            image: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&h=400&fit=crop",
-            category: "Flower Arrangements",
-            description: "Elegant white lilies with greenery",
-            featured: false,
-            new: true
-        },
-        {
-            id: 4,
-            name: "Orchid Plant",
-            price: 29.99,
-            image: "https://images.unsplash.com/photo-1527061011665-3652c757a4d4?w=400&h=400&fit=crop",
-            category: "Plants",
-            description: "Beautiful orchid in ceramic pot",
-            featured: false,
-            new: false
-        },
-        {
             id: 5,
-            name: "Sunflower Bouquet",
-            price: 32.50,
-            image: "https://images.unsplash.com/photo-1572451479139-7d9c43f0d6c4?w=400&h=400&fit=crop",
-            category: "Bouquets",
-            description: "Bright and cheerful sunflower arrangement",
+            name: "Event Centerpiece",
+            price: 89.99,
+            image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
+            category: "Event Arrangements",
+            description: "Large flower arrangement for events and parties",
             featured: true,
             new: true
         },
         {
             id: 6,
-            name: "Pink Rose Bouquet",
-            price: 28.99,
-            image: "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=400&h=400&fit=crop",
-            category: "Roses",
-            description: "Delicate pink roses bouquet",
+            name: "Romantic Gift Set",
+            price: 65.50,
+            image: "https://images.unsplash.com/photo-1553531769-5b5ad4b5c8c8?w=400&h=400&fit=crop",
+            category: "Gift Sets",
+            description: "Flowers with chocolates and greeting card",
             featured: false,
             new: false
         },
         {
             id: 7,
-            name: "Tulip Bouquet",
-            price: 27.50,
-            image: "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=400&h=400&fit=crop",
-            category: "Bouquets",
-            description: "Fresh tulips in vibrant colors",
+            name: "White Wedding Roses",
+            price: 55.99,
+            image: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&h=400&fit=crop",
+            category: "Wedding Flowers",
+            description: "Elegant white roses for wedding ceremonies",
             featured: false,
             new: true
         },
         {
             id: 8,
-            name: "Succulent Garden",
-            price: 39.99,
-            image: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&h=400&fit=crop",
-            category: "Plants",
-            description: "Assorted succulents in decorative pot",
+            name: "Spring Bouquet",
+            price: 38.75,
+            image: "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=400&h=400&fit=crop",
+            category: "Bouquets",
+            description: "Fresh spring flowers in vibrant colors",
             featured: true,
             new: false
         }
+    ];
+    
+    // الفئات المتاحة
+    const categories = [
+        "All",
+        "Roses",
+        "Bouquets",
+        "Wedding Flowers",
+        "Single Flowers",
+        "Event Arrangements",
+        "Gift Sets"
     ];
     
     // السلة
@@ -2095,6 +2627,7 @@
         
         saveProducts();
         renderHomePage();
+        renderCategoryTabs();
         updateCartDisplay();
         
         // Setup menu toggle for mobile
@@ -2207,17 +2740,26 @@
                     renderProductsPage();
                 }, 300);
                 break;
-            case 'featured':
-                mobileHeaderTitle.textContent = 'Featured';
-                mobileHeaderSubtitle.textContent = 'Premium Selection';
-                desktopHeaderTitle.textContent = 'Featured';
-                desktopHeaderSubtitle.textContent = 'Premium Selection';
-                document.querySelector('.desktop-nav-link[onclick*="featured"]').classList.add('active');
-                document.querySelector('.menu-link[onclick*="featured"]').classList.add('active');
-                document.querySelectorAll('.nav-item')[2].classList.add('active');
+            case 'categories':
+                mobileHeaderTitle.textContent = 'Categories';
+                mobileHeaderSubtitle.textContent = 'Browse by Type';
+                desktopHeaderTitle.textContent = 'Categories';
+                desktopHeaderSubtitle.textContent = 'Browse by Type';
+                document.querySelector('.desktop-nav-link[onclick*="categories"]').classList.add('active');
+                document.querySelector('.menu-link[onclick*="categories"]').classList.add('active');
+                document.querySelectorAll('.nav-item')[1].classList.add('active');
                 setTimeout(() => {
-                    renderFeaturedPage();
+                    renderCategoriesPage('All');
                 }, 300);
+                break;
+            case 'contact':
+                mobileHeaderTitle.textContent = 'Contact Us';
+                mobileHeaderSubtitle.textContent = 'Get in Touch';
+                desktopHeaderTitle.textContent = 'Contact Us';
+                desktopHeaderSubtitle.textContent = 'Get in Touch';
+                document.querySelector('.desktop-nav-link[onclick*="contact"]').classList.add('active');
+                document.querySelector('.menu-link[onclick*="contact"]').classList.add('active');
+                document.querySelectorAll('.nav-item')[2].classList.add('active');
                 break;
             case 'about':
                 mobileHeaderTitle.textContent = 'About Us';
@@ -2295,26 +2837,45 @@
         document.getElementById('all-products').innerHTML = productsHtml;
     }
     
-    // عرض صفحة المنتجات المميزة
-    function renderFeaturedPage() {
-        const featuredProducts = products.filter(p => p.featured);
+    // عرض تبويبات الفئات
+    function renderCategoryTabs() {
+        let tabsHtml = '';
+        categories.forEach(category => {
+            const isActive = category === 'All' ? 'active' : '';
+            tabsHtml += `<a href="#" class="category-tab ${isActive}" onclick="renderCategoriesPage('${category}')">${category}</a>`;
+        });
+        document.getElementById('categoryTabs').innerHTML = tabsHtml;
+    }
+    
+    // عرض المنتجات حسب الفئة
+    function renderCategoriesPage(category) {
+        // تحديث التبويب النشط
+        document.querySelectorAll('.category-tab').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        event.target.classList.add('active');
+        
+        let filteredProducts = category === 'All' 
+            ? products 
+            : products.filter(p => p.category === category);
+        
         let productsHtml = '';
         
-        if (featuredProducts.length > 0) {
-            featuredProducts.forEach((product, index) => {
+        if (filteredProducts.length > 0) {
+            filteredProducts.forEach((product, index) => {
                 productsHtml += createProductCard(product, index * 0.1);
             });
         } else {
             productsHtml = `
                 <div style="grid-column: 1/-1; text-align: center; padding: 40px 20px;">
-                    <i class="fas fa-star" style="font-size: 48px; color: #ddd; margin-bottom: 15px;"></i>
-                    <h3 style="color: var(--gray); margin-bottom: 10px;">No featured products available</h3>
-                    <p style="color: var(--gray);">Check back soon for featured items!</p>
+                    <i class="fas fa-box-open" style="font-size: 48px; color: #ddd; margin-bottom: 15px;"></i>
+                    <h3 style="color: var(--gray); margin-bottom: 10px;">No products in this category</h3>
+                    <p style="color: var(--gray);">Check back soon for new items!</p>
                 </div>
             `;
         }
         
-        document.getElementById('featured-products').innerHTML = productsHtml;
+        document.getElementById('category-products').innerHTML = productsHtml;
     }
     
     // إنشاء بطاقة المنتج
@@ -2352,6 +2913,37 @@
                 </div>
             </div>
         `;
+    }
+    
+    // إرسال رسالة الاتصال عبر واتساب
+    function sendContactMessage() {
+        const name = document.getElementById('contactName').value;
+        const email = document.getElementById('contactEmail').value;
+        const phone = document.getElementById('contactPhone').value;
+        const message = document.getElementById('contactMessage').value;
+        
+        if (!name || !phone || !message) {
+            alert('Please fill in all required fields (Name, Phone, Message)');
+            return;
+        }
+        
+        const fullMessage = `New Contact Message from Razan Flower Website:\n\n` +
+                           `Name: ${name}\n` +
+                           `Email: ${email || 'Not provided'}\n` +
+                           `Phone: ${phone}\n\n` +
+                           `Message:\n${message}\n\n` +
+                           `Please respond to this inquiry.`;
+        
+        const whatsappUrl = `https://wa.me/96181221970?text=${encodeURIComponent(fullMessage)}`;
+        window.open(whatsappUrl, '_blank');
+        
+        // تفريغ الحقول
+        document.getElementById('contactName').value = '';
+        document.getElementById('contactEmail').value = '';
+        document.getElementById('contactPhone').value = '';
+        document.getElementById('contactMessage').value = '';
+        
+        showNotification('Your message has been sent via WhatsApp!');
     }
     
     // إضافة إلى السلة
@@ -2650,7 +3242,8 @@
         renderAdminProducts();
         renderHomePage();
         renderProductsPage();
-        renderFeaturedPage();
+        renderCategoryTabs();
+        renderCategoriesPage('All');
         
         showNotification('Product added successfully!');
     }
@@ -2662,7 +3255,8 @@
             renderAdminProducts();
             renderHomePage();
             renderProductsPage();
-            renderFeaturedPage();
+            renderCategoryTabs();
+            renderCategoriesPage('All');
             showNotification('Product deleted successfully!');
         }
     }
@@ -2685,6 +3279,10 @@
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
+        }
+        @keyframes slideInLeft {
+            from { transform: translateX(-20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
         }
     `;
     document.head.appendChild(style);
